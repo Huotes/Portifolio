@@ -1,0 +1,42 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #111;
+}
+
+h1, h2 {
+    color: #fff;
+}
+
+header {
+    background-color: #111;
+    border-bottom: 2px solid red;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+section#skills ul {
+    padding: 0;
+    list-style: none;
+}
+
+section#skills ul li {
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+section#projects .col-md-6 {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #111;
+    border-top: 2px solid red;
+}
+
+footer p {
+    margin: 0;
+    color: white;
+}
