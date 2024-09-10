@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #fff;
+    background-color: #f4f4f9;
     color: #111;
 }
 
@@ -10,7 +10,7 @@ h1, h2 {
 
 header {
     background-color: #111;
-    border-bottom: 2px solid red;
+    border-bottom: 3px solid red;
 }
 
 .social-links a {
@@ -23,17 +23,22 @@ section#skills ul {
 }
 
 section#skills ul li {
-    font-size: 1.5rem;
-    padding: 10px;
+    font-size: 1.2rem;
+    padding: 8px;
 }
 
 section#projects .col-md-6 {
     margin-bottom: 20px;
 }
 
+section#experience .col-md-6 {
+    margin-bottom: 20px;
+}
+
 footer {
     background-color: #111;
-    border-top: 2px solid red;
+    border-top: 3px solid red;
+    padding-top: 10px;
 }
 
 footer p {
