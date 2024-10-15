@@ -91,6 +91,57 @@ header .lead {
     transform: translateY(0);
 }
 
+/* Estilos da seção de Experiência Profissional */
+#experience {
+    background-color: #f8f9fa; /* Fundo claro para contraste */
+    padding: 60px 20px; /* Padding adicional para dar espaçamento */
+    border-top: 5px solid #ffcc00; /* Borda superior com a cor de destaque */
+}
+
+#experience-title {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+#experience h3 {
+    font-size: 1.5rem;
+    color: #111;
+    font-weight: bold;
+}
+
+#experience p {
+    font-size: 1rem;
+    color: #555;
+}
+
+#experience strong {
+    color: #333; /* Cor forte para os títulos */
+}
+
+/* Estilo dos "cards" de experiência */
+#experience .col-md-6 {
+    margin-bottom: 30px;
+}
+
+#experience .col-md-6 h3 {
+    color: #ffcc00; /* Cor amarela para destacar os títulos */
+    margin-bottom: 15px;
+}
+
+#experience .col-md-6 p {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Leve sombra para criar profundidade */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#experience .col-md-6:hover p {
+    transform: scale(1.02); /* Leve aumento ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais forte ao hover */
+}
+
 /* Footer */
 footer {
     background-color: #111;
@@ -138,5 +189,21 @@ footer i {
     .skill-icons {
         opacity: 1;
         transform: none;
+    }
+
+    #experience {
+        padding: 40px 10px;
+    }
+
+    #experience-title {
+        font-size: 2rem;
+    }
+
+    #experience .col-md-6 h3 {
+        font-size: 1.3rem;
+    }
+
+    #experience .col-md-6 p {
+        font-size: 0.9rem;
     }
 }
