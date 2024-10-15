@@ -4,113 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Athos Aurélio</title>
+    <title>Athos Aurélio - Full-Stack Developer & DevOps</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet"> <!-- Estilos externos -->
 </head>
 <body>
-    <header class="bg-dark text-white text-center py-4">
-        <h1>Athos Aurélio - Full-Stack Developer & DevOps</h1>
-        <p>Rust | Python | DevOps | Cloud Solutions</p>
+    <header class="bg-dark text-white text-center py-5" style="background-image: url('header-bg.jpg'); background-size: cover;">
+        <div class="overlay d-flex flex-column justify-content-center align-items-center">
+            <h1 class="display-4">Athos Aurélio</h1>
+            <p id="header-subtitle" class="lead">Full-Stack Developer & DevOps | Rust | Python | Cloud Solutions</p>
+            <!-- Botão para alternar idiomas -->
+            <div class="language-switcher text-center mt-3">
+                <button id="language-btn" class="btn btn-outline-light">
+                    <img id="flag-icon" src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="Inglês" width="30">
+                </button>
+            </div>
+        </div>
     </header>
 
-    <section id="about" class="container mt-5">
-        <h2>About Me</h2>
-        <p>
-            I am a full-stack developer with over 5 years of experience, specializing in Rust, Python, and cloud-based solutions. I have a passion for solving complex problems, developing scalable systems, and ensuring the quality of every project. I am skilled in both back-end and front-end technologies, and have hands-on experience in DevOps, focusing on automation, CI/CD pipelines, and cloud infrastructure.
+    <section id="about" class="container py-5 text-center">
+        <h2 class="text-center" id="about-title">About Me</h2>
+        <p id="about-text">
+            I am a full-stack developer with over 5 years of experience, specializing in Rust, Python, and cloud-based solutions.
+            Passionate about solving complex problems, developing scalable systems, and ensuring quality.
         </p>
-        <div class="social-links">
-            <a href="https://github.com/Huotes" target="_blank" class="btn btn-outline-dark">GitHub</a>
-            <a href="https://www.linkedin.com/in/athosaurelio/" target="_blank" class="btn btn-outline-dark">LinkedIn</a>
-        </div>
     </section>
 
-    <section id="skills" class="bg-danger text-white text-center py-5 mt-5">
-        <h2>Skills</h2>
+    <section id="skills" class="bg-danger text-white py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h3>Front-End</h3>
-                    <ul class="list-unstyled">
-                        <li>JavaScript & TypeScript</li>
-                        <li>React & React Native</li>
-                        <li>Phaser & PixiJS</li>
-                    </ul>
+            <h2 class="text-center" id="skills-title">Skills</h2>
+            <div class="row text-center mt-4">
+                <!-- Front-End Skills -->
+                <div class="col-md-4 mb-4">
+                    <div class="card skill-card bg-dark p-4">
+                        <h3>Front-End</h3>
+                        <ul class="list-unstyled skill-icons">
+                            <li><i class="fab fa-js-square"></i> <span id="frontend-skill-1">JavaScript & TypeScript</span></li>
+                            <li><i class="fab fa-react"></i> <span id="frontend-skill-2">React & React Native</span></li>
+                            <li><i class="fas fa-gamepad"></i> <span id="frontend-skill-3">Phaser & PixiJS</span></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h3>Back-End</h3>
-                    <ul class="list-unstyled">
-                        <li>Python (Django, Flask, Pandas)</li>
-                        <li>Rust (Tauri, Juniper, Seed)</li>
-                        <li>C/C++ (QT, GTKMM)</li>
-                    </ul>
+                <!-- Back-End Skills -->
+                <div class="col-md-4 mb-4">
+                    <div class="card skill-card bg-dark p-4">
+                        <h3>Back-End</h3>
+                        <ul class="list-unstyled skill-icons">
+                            <li><i class="fab fa-python"></i> <span id="backend-skill-1">Python (Django, Flask)</span></li>
+                            <li><i class="fab fa-rust"></i> <span id="backend-skill-2">Rust (Tauri, Juniper)</span></li>
+                            <li><i class="fas fa-code"></i> <span id="backend-skill-3">C/C++ (QT, GTKMM)</span></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h3>DevOps</h3>
-                    <ul class="list-unstyled">
-                        <li>AWS Cloud</li>
-                        <li>Docker & Kubernetes</li>
-                        <li>Jenkins, Terraform</li>
-                        <li>Linux (Debian, Ubuntu)</li>
-                    </ul>
+                <!-- DevOps Skills -->
+                <div class="col-md-4 mb-4">
+                    <div class="card skill-card bg-dark p-4">
+                        <h3>DevOps</h3>
+                        <ul class="list-unstyled skill-icons">
+                            <li><i class="fab fa-aws"></i> <span id="devops-skill-1">AWS Cloud</span></li>
+                            <li><i class="fab fa-docker"></i> <span id="devops-skill-2">Docker & Kubernetes</span></li>
+                            <li><i class="fas fa-terminal"></i> <span id="devops-skill-3">Jenkins, Terraform</span></li>
+                            <li><i class="fab fa-linux"></i> <span id="devops-skill-4">Linux (Debian, Ubuntu)</span></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="container mt-5">
-        <h2>Projects</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <h3>Task Scheduler Optimizer (Rust)</h3>
-                <p>A backend system built with Rust to optimize task scheduling efficiently for distributed systems.</p>
-                <a href="https://github.com/Huotes/project1" target="_blank" class="btn btn-dark">View on GitHub</a>
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>Contact me via:</p>
+            <div class="d-flex justify-content-center mb-3">
+                <a href="mailto:aureliodosol@gmail.com" class="text-white mx-3">
+                    <i class="fas fa-envelope"></i> aureliodosol@gmail.com
+                </a>
             </div>
-            <div class="col-md-6">
-                <h3>Data Analytics Microservice (Python)</h3>
-                <p>A Python-based microservice architecture for high-performance data analytics and visualizations.</p>
-                <a href="https://github.com/Huotes/project2" target="_blank" class="btn btn-dark">View on GitHub</a>
+            <div class="d-flex justify-content-center mb-3">
+                <a href="tel:+5518997896156" class="text-white mx-3">
+                    <i class="fas fa-phone"></i> +55 18 99789-6156
+                </a>
             </div>
-        </div>
-
-        <div class="row mt-4">
-            <div class="col-md-6">
-                <h3>Indie Game Publishing Platform</h3>
-                <p>A platform for publishing indie games with monetization options, built using AWS Cloud, TypeScript, and NodeJS.</p>
-                <a href="https://github.com/Huotes/project3" target="_blank" class="btn btn-dark">View on GitHub</a>
+            <div class="d-flex justify-content-center mb-3">
+                <a href="https://github.com/Huotes" target="_blank" class="text-white mx-3">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
             </div>
-            <div class="col-md-6">
-                <h3>MMORPG with Crypto Transactions (C++)</h3>
-                <p>An MMO RPG game with multiplayer support and crypto transactions, developed using C++.</p>
-                <a href="https://github.com/Huotes/project4" target="_blank" class="btn btn-dark">View on GitHub</a>
+            <div class="d-flex justify-content-center">
+                <a href="https://www.linkedin.com/in/athosaurelio/" target="_blank" class="text-white mx-3">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
             </div>
         </div>
-    </section>
-
-    <section id="experience" class="container mt-5">
-        <h2>Professional Experience</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <h3>International Global Solutions (IGS)</h3>
-                <p>Developed web-based games using Godot Engine and Phaser framework with Python (Django) for backend.</p>
-            </div>
-            <div class="col-md-6">
-                <h3>Result Soluções</h3>
-                <p>Worked on the development of educational games for web and mobile, with a focus on responsive design.</p>
-            </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-md-6">
-                <h3>Freelancer - Fiverr</h3>
-                <p>Developed websites, games, and custom solutions for clients, specializing in front-end and game development.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-dark text-white text-center py-3 mt-5">
-        <p>Contact: aureliodosol@gmail.com | Phone: +55 18 99789-6156</p>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Inclusão do Script Externo -->
+    <script src="components/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

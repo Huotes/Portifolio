@@ -1,47 +1,142 @@
+/* Fonte principal */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #f4f4f9;
-    color: #111;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
+/* Estilos para os títulos */
 h1, h2 {
     color: #fff;
 }
 
+/* Header com imagem de fundo */
 header {
+    position: relative;
+    text-align: center;
+    padding: 60px 20px; /* Padding em vez de altura fixa */
+    min-height: 50vh; /* Definir altura mínima */
+}
+
+header .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px 20px;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+header .lead {
+    font-size: 1.25rem;
+}
+
+.language-switcher button {
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.language-switcher button img {
+    width: 30px;
+}
+
+/* Estilos dos cards de skills */
+.skill-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    overflow: hidden;
+    height: 250px;
+    color: #fff;
     background-color: #111;
-    border-bottom: 3px solid red;
+    border-radius: 10px;
 }
 
-.social-links a {
-    margin: 0 10px;
+.skill-card h3 {
+    color: #ffcc00; /* Destaque para títulos dos cards */
 }
 
-section#skills ul {
-    padding: 0;
-    list-style: none;
+.skill-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
 }
 
-section#skills ul li {
+/* Cor dos textos e ícones dentro dos cards */
+.skill-icons li {
     font-size: 1.2rem;
     padding: 8px;
+    display: flex;
+    align-items: center;
+    color: #fff;
 }
 
-section#projects .col-md-6 {
-    margin-bottom: 20px;
+.skill-icons li i {
+    font-size: 2rem;
+    margin-right: 10px;
+    color: #ffcc00;
 }
 
-section#experience .col-md-6 {
-    margin-bottom: 20px;
+/* Animação de aparecimento dos ícones */
+.skill-icons {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: translateY(20px);
 }
 
+.skill-card:hover .skill-icons {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Footer */
 footer {
     background-color: #111;
-    border-top: 3px solid red;
-    padding-top: 10px;
+    padding-top: 30px;
 }
 
-footer p {
+footer p, footer a {
+    color: #fff;
     margin: 0;
-    color: white;
+    text-decoration: none;
+}
+
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffcc00;
+}
+
+footer i {
+    margin-right: 8px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header .lead {
+        font-size: 1.2rem;
+    }
+
+    .skill-card {
+        height: auto;
+        padding: 20px;
+    }
+
+    .skill-card:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .skill-icons {
+        opacity: 1;
+        transform: none;
+    }
 }
